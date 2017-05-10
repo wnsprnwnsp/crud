@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Market</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Luckiest+Guy" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumpenscript.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lemon" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+  
+   <style>
+    #bgi {
+      background: url(space.jpg) no-repeat;
+      border: none;
+      width: 100%;
+      height: 740px;
+      cursor: pointer;
+      vertical-align:middle;
+      background-size :cover;
+      background-repeat :no-repeat;}
+
+  </style>
+</head>
+
+<body class="bgc">
+
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper red">
+        <a href="/" class="brand-logo"><h4 class="marg titlem font-p center-align" style="padding-left:20px;padding-top:25px">Market</h3></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/list" class="font-h5"><h5 class="marg titlem font-h5 center-align">Book</h5></a></li>
+          <li><a href="/" class="font-h5"><h5 class="marg titlem font-h5 center-align">패션</h5></a></li>
+          <li><a href="/" class="font-h5"><h5 class="marg titlem font-h5 center-align">문구</h5></a></li>
+          <li><a href="/" class="font-h5"><h5 class="marg titlem font-h5 center-align">컴퓨터/디지털</h5></a></li>
+          <li><a href="/" class="font-h5"><h5 class="marg titlem font-h5 center-align">생필품</h5></a></li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+  
+  
+ 
+<%= yield %>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<form action='/update?id=<%=@posts.id %>' method='POST'>
+<div class="container font">
+    <h1 class="center-align marg"> 물품 등록</h1>
+    
+    <hr>
+    <div class="row">
+    <div class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">book</i>
+          <input id="icon_prefix" type="text" class="validate" name="title"  value="<%=@posts.title %>">
+          <label for="icon_prefix">책 제목</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">money</i>
+          <input id="icon_telephone" type="tel" class="validate" name="contents" value="<%=@posts.contents %>">
+          <label for="icon_telephone">가격 </label>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+   
+  
+  
+  <div class="col sl 4 rignt-align">     
+  <button class="btn waves-effect waves-light" type="submit" name="action">제출
+    <i class="material-icons right">send</i>
+  </button>  
+  </div>
+</div>
+</form>
+
+ 

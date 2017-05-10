@@ -1,0 +1,45 @@
+
+
+
+<div class="container">
+    <h1 class="marg titlem font-h3 center-align">Book</h1>
+
+<div class ="row">
+
+<% @posts.each do |p| %>
+<div class="col s6 l4">
+  <div class="card fade">
+  
+    <div class="card-content blue-grey-text font-h4">
+      <p> <i class="material-icons">book</i> <%=p.title %> <br><br>
+          <i class="material-icons">speaker_notes</i> <%=p.contents %> <br><br>
+         </p>
+         <br>
+             <a href="/delete?id=<%=p.id%>">Delete</a>
+             <a href="/edit?id=<%=p.id%>">Edit</a>
+    </div>
+   
+  </div>
+</div>
+  <% end %>
+  
+</div>
+
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large red" href="/index">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
