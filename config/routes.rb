@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   
-  root "home#mainpage"
+  get 'login/index'
+
+  devise_for :users
+  root "login#index"
   get '/index' => "home#index"
 
   post '/write' => 'home#write'
